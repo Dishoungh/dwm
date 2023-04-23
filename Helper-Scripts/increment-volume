@@ -1,0 +1,5 @@
+#!/bin/fish
+
+if [ $(pactl get-sink-volume $(pactl get-default-sink) | awk 'NR==1{print $5}' | sed 's/\%//') -lt 100 ];
+	pactl set-sink-volume $(pactl get-default-sink) +1%
+end
