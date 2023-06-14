@@ -64,6 +64,8 @@ static const char* increasevol[] = { "increment-volume", NULL };
 static const char* decreasevol[] = { "decrement-volume", NULL };
 static const char* mutetoggle[] = { "toggle-mute", NULL };
 
+static const char* screenshot[] = { "flameshot", "gui", "-d", "1000", NULL };
+
 /* Keybindings */
 static const Key keys[] = {
 	/* modifier                     key        			function        argument */
@@ -93,6 +95,7 @@ static const Key keys[] = {
 	{ 0,				XF86XK_AudioLowerVolume,	spawn,		{.v = decreasevol } },
 	{ 0,				XF86XK_AudioRaiseVolume,	spawn,		{.v = increasevol } },
 	{ 0,				XF86XK_AudioMute,		spawn,		{.v = mutetoggle } },
+	{ 0,				XK_Print,			spawn,		{.v = screenshot } },
 	TAGKEYS(                        XK_1,                      	0)
 	TAGKEYS(                        XK_2,                      	1)
 	TAGKEYS(                        XK_3,                      	2)
