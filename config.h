@@ -64,7 +64,7 @@ static const char* increasevol[] = { "increment-volume", NULL };
 static const char* decreasevol[] = { "decrement-volume", NULL };
 static const char* mutetoggle[] = { "toggle-mute", NULL };
 
-static const char* screenshot[] = { "flameshot", "gui", "-d", "1000", NULL };
+static const char* screenshot[] = { "flameshot", "gui", NULL };
 
 /* Keybindings */
 static const Key keys[] = {
